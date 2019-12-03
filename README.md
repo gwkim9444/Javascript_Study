@@ -18,6 +18,10 @@ let json_data = {
               c : function()
               {
                 console.log("good");
-               }
+               };
+//localStorage에 저장할 요소
 localStorage.setItem('json_data',JSON.stringify(json_data));
+//localStorage에 꺼낼 요소
+let local_data = localStorage.getItem('json_data');
+console.log(JSON.parse(local_data));
 ```
