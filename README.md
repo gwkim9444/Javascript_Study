@@ -54,4 +54,6 @@ else {
       true && alert('실행A');
      false && alert('실행B');
      //이럴 경우 false 인 '실행A'만 수행
+     // 따라서 상기의 삼항연산은 더 짧은 조건문으로 다음과 같이 축약 될 수 있다.
+     (조건) && console.log("참 일때 실행") || console.log("거짓일 때 실행")
 ```
