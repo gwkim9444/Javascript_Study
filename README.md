@@ -57,3 +57,14 @@ else {
      // 따라서 상기의 삼항연산은 더 짧은 조건문으로 다음과 같이 축약 될 수 있다.
      (조건) && console.log("참 일때 실행") || console.log("거짓일 때 실행")
 ```
+
+
+### Javascript Array 안 항목마다 새로운 조건을 return 하고 싶을때  
+Javascript 함수 Array.prototype.map() 함수를 활용한다.
+```Javascript
+  const array1 = [1, 4, 9, 16];
+  // pass a function to map
+  const map1 = array1.map(x => x * 2);
+  console.log(map1);
+  // expected output: Array [2, 8, 18, 32]
+```
