@@ -71,16 +71,18 @@ Javascript 함수 Array.prototype.map() 함수를 활용한다.
 
 ### Javascript For문에 Continue 한번 써먹어 본 경험
 ```javascript
-                  for (let parse of JSON.parse(text).colum) {
-                            if(str_column.includes(parse.COLUMN_NAME)){
-                                continue;
-                            }
-                            else{
-                            let worker = document.getElementById("List_column");
-                            let opt = document.createElement('option');
-                            worker.value = parse.COLUMN_NAME;
-                            opt.innerHTML = parse.COLUMN_NAME;
-                            worker.appendChild(opt);
-                            }
-                        }
+ for (let parse of JSON.parse(text).colum) {
+   if(str_column.includes(parse.COLUMN_NAME))
+   {
+      continue;
+    }
+     else
+     {
+        let worker = document.getElementById("List_column");
+        let opt = document.createElement('option');
+        worker.value = parse.COLUMN_NAME;
+        opt.innerHTML = parse.COLUMN_NAME;
+        worker.appendChild(opt);
+     }
+}
 ```
